@@ -5,12 +5,12 @@ pipeline {
         stage('Preperation') {
             steps{
                 echo 'prep!'
-		sh "./gradlew clean test jar"
             }
         }
         stage('Build') {
             steps{
                 echo 'buld'
+		sh "./gradlew clean test jar"
             }
         }
         stage('Results') {
