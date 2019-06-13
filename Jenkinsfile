@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps{
                 echo 'buld'
+                echo 'buld'
 		sh "./gradlew clean test jar"
             }
         }
