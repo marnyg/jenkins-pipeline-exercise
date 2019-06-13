@@ -2,14 +2,19 @@ pipeline {
     agent any
     
     stages {
-        stage('greetings') {
+        stage('Preperation') {
             steps{
-                echo 'Holla Mundos!'
-                echo 'Holla Mundos!'
-                echo 'Holla Mundos!'
-                echo 'Holla Mundos!'
-                echo 'Holla Mundos!'
-                echo 'Holla Mundos!'
+                echo 'prep!'
+            }
+        }
+        stage('Build') {
+            steps{
+                echo 'buld'
+            }
+        }
+        stage('Results') {
+            steps{
+                echo 'Res'
             }
         }
     }
